@@ -4,17 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Портфолио — FinAnaliz</title>
-<link rel="stylesheet" href="style.css">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #333; }
-    header, main { max-width: 960px; margin: auto; padding: 40px 20px; }
-    nav a { margin-right: 20px; color: #007acc; text-decoration: none; font-weight: bold; }
-    .project { margin-bottom: 30px; border-bottom: 1px solid #ccc; padding-bottom: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #F5E9D4;
+      color: #111;
+    }
+    header {
+      background: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav {
+      max-width: 960px;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      padding: 0 20px;
+    }
+    nav a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .project {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-3px);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Портфолио</h1>
     <nav>
       <a href="index.html">Главная</a>
       <a href="portfolio.html">Портфолио</a>
@@ -22,17 +70,33 @@
     </nav>
   </header>
   <main>
+    <h1>Примеры проектов</h1>
+
     <div class="project">
-      <h2>Дашборд продаж</h2>
-      <p>Аналитика по выручке, категориям товаров, точкам продаж. Визуализация ключевых KPI.</p>
+      <h2>Продажи для розничной сети</h2>
+      <p>Дашборд с разбивкой по филиалам, категориям и менеджерам. Реализация: Power BI + Excel.</p>
+      <ul>
+        <li>Визуализация выручки, маржи, продаж по SKU</li>
+        <li>Снижение времени подготовки отчетов с 4 часов до 10 минут</li>
+      </ul>
     </div>
+
     <div class="project">
       <h2>HR-аналитика</h2>
-      <p>Отчёт по текучести персонала, структуре по возрасту и стажу, причинам увольнений.</p>
+      <p>Дашборд по текучести и затратам на персонал.</p>
+      <ul>
+        <li>Разбивка по отделам, должностям, причинам увольнений</li>
+        <li>Идеи по снижению текучести — автоматизация и фильтрация кандидатов</li>
+      </ul>
     </div>
+
     <div class="project">
-      <h2>Финансовый отчёт P&L</h2>
-      <p>План-факт анализ, детализация по клиентам и товарам, пересчёт в валюте.</p>
+      <h2>Финансовый P&L-отчет</h2>
+      <p>Сравнение план-факт, отклонения, анализ на уровне клиента и категории товара.</p>
+      <ul>
+        <li>Интеграция с 1С (SQL) и Excel</li>
+        <li>Автоматическое обновление и курс пересчёта валют</li>
+      </ul>
     </div>
   </main>
 </body>
