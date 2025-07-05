@@ -1,105 +1,48 @@
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #F5E9D4;
+  background: #F5E9D4;
   color: #000;
-  scroll-behavior: smooth;
 }
 
 header {
-  background-color: #F5E9D4;
+  background-color: #F5E9D4; /* Раньше было белое */
+  padding: 1rem 2rem;
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 20px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 nav {
   display: flex;
+  gap: 1.5rem;
   justify-content: center;
-  gap: 30px;
 }
 
 nav a {
-  text-decoration: none;
-  font-weight: bold;
   color: #007acc;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #00bcd4;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 main {
-  max-width: 800px;
-  margin: 120px auto 40px; /* ⬅️ сдвигаем вниз от фиксированного header */
+  max-width: 960px;
+  margin: 140px auto 40px;
   padding: 0 20px;
-  animation: slideUp 1s ease;
 }
 
-h1, h2 {
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  animation: fadeIn 1.2s ease;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-top: 2rem;
-  color: #007acc;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-a.button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #007acc;
-  color: white;
-  text-decoration: none;
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a.button:hover {
-  background-color: #00bcd4;
-}
-
-/* Анимации */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Адаптивность */
-@media screen and (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  main {
-    margin: 140px 20px 20px;
-  }
-
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
