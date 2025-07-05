@@ -1,4 +1,4 @@
-
+/* Общие стили */
 body {
   font-family: Arial, sans-serif;
   background-color: #F5E9D4;
@@ -6,7 +6,7 @@ body {
   color: #000;
 }
 
-
+/* Шапка */
 header {
   background-color: #F5E9D4;
   padding: 1rem 0;
@@ -17,7 +17,7 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-
+/* Навигация */
 nav {
   display: flex;
   justify-content: center;
@@ -30,21 +30,21 @@ nav a {
   text-decoration: none;
 }
 
-
+/* Контент */
 main {
   max-width: 960px;
   margin: 120px auto 40px;
   padding: 0 20px;
 }
 
-
+/* Заголовки */
 h1 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
-
+/* Карточки проектов */
 .card {
   background: #fff;
   border-radius: 8px;
@@ -59,7 +59,7 @@ h1 {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Адаптивность */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
