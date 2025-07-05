@@ -1,20 +1,23 @@
+/* Общие стили */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #F5E9D4;
+  font-family: 'Arial', sans-serif;
+  background-color: #F5E9D4;
   color: #000;
 }
 
+/* Шапка */
 header {
   background-color: #F5E9D4;
   padding: 1rem 0;
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* Навигация */
 nav {
   display: flex;
   justify-content: center;
@@ -22,28 +25,40 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
-  font-weight: bold;
   color: #007acc;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Основной блок */
 main {
   max-width: 960px;
   margin: 120px auto 40px;
   padding: 0 20px;
 }
 
+/* Заголовки */
 h1 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Карточки */
 .card {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  transition: all 0.3s ease;
-}
+  transi
