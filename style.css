@@ -6,43 +6,44 @@ body {
 }
 
 header {
-  background-color: #F5E9D4; /* Раньше было белое */
-  padding: 1rem 2rem;
+  background-color: #F5E9D4;
+  padding: 1rem 0;
   position: fixed;
-  top: 0;
   width: 100%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  top: 0;
   z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 nav {
   display: flex;
-  gap: 1.5rem;
   justify-content: center;
+  gap: 2rem;
 }
 
 nav a {
-  color: #007acc;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: bold;
+  color: #007acc;
 }
 
 main {
   max-width: 960px;
-  margin: 140px auto 40px;
+  margin: 120px auto 40px;
   padding: 0 20px;
 }
 
-.card {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
 }
