@@ -25,7 +25,7 @@ nav a {
   color: #007acc;
   font-weight: bold;
   text-decoration: none;
-  font-size: 2rem; /* увеличим размер шрифта */
+  font-size: 1.6rem; /* увеличим размер шрифта */
   padding: 0.5rem 1rem;
 }
 
