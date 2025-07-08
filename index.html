@@ -2,9 +2,91 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Главная — FinanalizKZ</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7ebd8;
+    }
+
+    header {
+      background-color: #f7ebd8;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo {
+      height: 80px;
+      margin-right: 40px;
+    }
+
+    nav {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      color: #1a73e8;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .about-section {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      margin-bottom: 10px;
+    }
+
+    .about-text p {
+      margin: 8px 0;
+    }
+
+    .about-image {
+      max-width: 300px;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,30 +101,25 @@
   </header>
 
   <main>
-    <h1 class="headline">BI-отчётность, которая меняет бизнес</h1>
-    <p class="subheadline">Автоматизация отчетности, дашборды, интеграция с 1С / CRM / Excel.</p>
+    <h1>BI-отчётность, которая меняет бизнес</h1>
+    <p class="subtitle">Автоматизация отчетности, дашборды, интеграция с 1С / CRM / Excel.</p>
 
-    <section class="about-section">
+    <h2>О нас</h2>
+    <div class="about-section">
       <div class="about-text">
-        <h2>О нас</h2>
-        <p><strong>Тренер Power BI</strong><br/>
-        Кажденова Асия<br/>
-        Руководитель направления BIG DATA со стажем более 20 лет.</p>
-
+        <h3>Тренер Power BI</h3>
+        <p><strong>Кажденова Асия</strong></p>
+        <p>Руководитель направления BIG DATA со стажем более 20 лет.</p>
         <p>Дипломированный преподаватель физики и информатики, со стажем работы в Зап.-Каз. Государственном Университете на кафедре информатики.</p>
-
         <p>Автоматизировала процессы и внедряла аналитические системы в строительных, логистических, агропроизводственных, нефтедобывающих компаниях, ломбардах, агентстве недвижимости, ритейле, сфере онлайн развлечений.</p>
-
         <p>Имеет практический опыт в бизнес-аналитике с использованием Power BI.</p>
-
-        <p>Разрабатывала формы и занималась подготовкой различных отчетов для бизнеса, включая процесс написания запросов на MS SQL/MySQL/PostgreSQL.</p>
-
+        <p>Разрабатывала формы и занималась подготовкой различных отчетов для бизнеса, включая процесс написания запросов на MS SQL / MySQL / PostgreSQL.</p>
         <p>Разработала и более 4-х лет успешно ведет тренинги по Power BI.</p>
       </div>
-      <div class="about-photo">
-        <img src="asiya.jpeg" alt="Кажденова Асия" />
+      <div>
+        <img src="asiya.jpeg" alt="Асия" class="about-image" />
       </div>
-    </section>
+    </div>
   </main>
 </body>
 </html>
