@@ -27,7 +27,8 @@ header {
 }
 
 .logo {
-  height: 28px;
+  height: 60px;
+  margin-right: 20px;
 }
 
 /* Навигация */
